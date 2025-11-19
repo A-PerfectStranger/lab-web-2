@@ -1,0 +1,204 @@
+:root {
+    --rojo: #e74c3c;
+    --azul: #2c3e50;
+    --negro: #333;
+    --celeste: #2980b9;
+    --celestito: #3498db;
+    --centrado: center;
+    --izq: left;
+    --fondo: #2c3e50;
+    --degradado: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+* {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    border: none;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+header {
+    background-color: var(--fondo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 16px 32px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 40px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+main {
+    padding: 4rem 2rem;
+    text-align: var(--centrado);
+    color: white;
+    background: var(--degradado);
+    text-align: var(--centrado);
+}
+
+main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+main p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+main button {
+    background-color: var(--rojo);
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+main button:hover {
+    display: inline-block;
+    background-color: #c0392b;
+}
+
+section {
+    text-align: center;
+    max-width: 1200px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+section h1 {
+    color: var(--azul);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card-instrumento {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    text-align: var(--izq);
+    padding: 1.5rem;
+}
+
+.card-instrumento img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-instrumento h1 {
+    margin-bottom: 0.5rem;
+    color: var(--azul);
+}
+
+.card-instrumento span {
+    color: var(--rojo);
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.card-instrumento button {
+    background: var(--celestito);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.card-instrumento button:hover {
+    background-color: var(--celeste);
+}
+
+.card-instrumento:hover {
+    transform: translateY(-5px);
+}
+
+.conciertos {
+    background: #ecf0f1;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.conciertos h1 {
+    text-align: center;
+}
+
+.concierto {
+    background: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.concierto div h1 {
+    color: var(--azul);
+    margin-bottom: 0.3rem;
+} 
+
+.concierto div p {
+    color: #7f8c8d;
+}
+
+.concierto .lugar {
+    color: #333;
+}
+
+.btn-red {
+    background-color: var(--rojo);
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
