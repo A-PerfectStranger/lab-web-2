@@ -32,17 +32,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
     color: white;
-    padding: 16px 32px;
+    padding: 1rem 2rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    height: 40px;
+    height: 60px;
 }
 
 .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 2rem;
 }
 
 .logo h1 {
@@ -59,7 +60,7 @@ header nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 2rem;
 }
 
 main {
@@ -184,6 +185,8 @@ section h1 {
 .concierto div h1 {
     color: var(--azul);
     margin-bottom: 0.3rem;
+    font-size: 18px;
+    text-align: left;
 } 
 
 .concierto div p {
@@ -201,4 +204,36 @@ section h1 {
     color: white;
     font-size: 16px;
     transition: background-color 0.3s;
+}
+
+footer {
+    background: var(--azul);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+footer h1 {
+    font-size: 20px;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    transition: color 0.3s;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.redes div:hover {
+    color: var(--celestito);
+}
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 10px;
 }
